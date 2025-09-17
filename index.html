@@ -2,36 +2,57 @@
 <html>
 <head>
   <title>Link Example</title>
+  <h1>Webhaptic Intelligence Limited</h1>
+
 </head>
-<h1>Webhaptic Intelligence Limited</h1>
 <body>
 
   <style>
-    .button-link {
-      display: inline-block;
-      background-color: #28a745; /* Green background */
-      color: white;              /* White text */
-      padding: 10px 20px;        /* Padding around text */
-      text-decoration: none;     /* Remove underline */
-      border-radius: 6px;        /* Rounded corners */
-      font-size: 16px;
-      font-family: sans-serif;
-      transition: background-color 0.3s ease;
-    
+ 
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: #fffbe6;
+    }
+    button {
+      padding: 12px 24px;
+      font-size: 18px;
+      background-color: #ff6f61;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
     }
 
-    .button-link:hover {
-      background-color: #218838; /* Darker green on hover */
+h1 {
+  color: #0000FF; /* Pure Blue */
+  font-size: 48px; /* Bigger heading */
+  font-family: 'Georgia', serif; /* Elegant serif font */
+}
+
+body {
+  background-color: #87CEEB; /* Sky Blue */
+}
+  </style>
+</head>
+<body>
+
+  <p>Click below to register:</p>
+  <button onclick="trickyMessage()">Register Here</button>
+
+  <script>
+    function trickyMessage() {
+      document.body.innerHTML = `
+        <h1 style="font-size: 48px; color: #2c3e50;">🤯 Wait... What Just Happened?</h1>
+        <p style="font-size: 22px; color: #555;">You clicked "Register" and unlocked a secret message.</p>
+        <p style="font-size: 20px; color: #27ae60;"><strong>🎉 Congratulations Webhaptic!</strong><br>You're not just registered—you've been chosen for greatness.</p>
+        <p style="font-size: 16px; color: #999;">(Or maybe you just clicked a button. Either way, we’re impressed.)</p>
+      `;
     }
-  </style>
-</head>
-  <a href="https://www.registerhere.com"class="button-link" target="_blank">Register Here</a>
-</body>
-</html>
+  </script>
 
-  </style>
-</head>
-
+  
 </body>
 </html>
 
